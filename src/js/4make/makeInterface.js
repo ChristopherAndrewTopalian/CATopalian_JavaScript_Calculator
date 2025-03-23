@@ -13,7 +13,7 @@ function makeInterface()
     mainDiv.id = "mainDiv";
     mainDiv.style.position = "absolute";
     mainDiv.style.left = 100 + "px";
-    mainDiv.style.top = 60 + "px";
+    mainDiv.style.top = 30 + "px";
     mainDiv.style.height = 374 + "px";
     mainDiv.style.borderStyle = "solid";
     mainDiv.style.borderWidth = 2 + "px";
