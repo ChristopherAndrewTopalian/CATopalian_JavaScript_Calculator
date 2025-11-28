@@ -16,10 +16,11 @@ function makeTitleOfApp()
     titleOfApp.textContent = 'CATopalian JavaScript Calculator';
     titleOfApp.href = 'https://github.com/ChristopherAndrewTopalian/CATopalian_JavaScript_Calculator';
     titleOfApp.target = '_blank';
+    titleOfApp.style.fontFamily = 'Arial';
     titleOfApp.style.fontSize = '17px';
     titleOfApp.style.fontWeight = 'bold';
     titleOfApp.style.textDecoration = 'none';
-    titleOfApp.style.color = 'rgb(100, 100, 100)';
+    titleOfApp.style.color = 'rgb(150, 150, 150)';
     mainDiv.append(titleOfApp);
 }
 

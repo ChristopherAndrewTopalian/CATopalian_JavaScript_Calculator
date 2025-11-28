@@ -40,6 +40,8 @@ function makeInterface()
     buttonClear.className = "buttonSymbols";
     buttonClear.onclick = function()
     {
+        clickSound();
+
         calculationArray = [];
         ge("theScreen").textContent = "0";
     };
@@ -55,6 +57,8 @@ function makeInterface()
     buttonEqual.className = "buttonSymbols";
     buttonEqual.onclick = function()
     {
+        clickSound();
+
         // comment out this below statement if you don't want it to reset calculationArray to empty
         calculationArray = [];
 
@@ -337,7 +341,7 @@ function makeInterface()
     symbolsDiv.append(buttonDecimalPoint);
 }
 
-//-//
+//----//
 
 // Dedicated to God the Father
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
