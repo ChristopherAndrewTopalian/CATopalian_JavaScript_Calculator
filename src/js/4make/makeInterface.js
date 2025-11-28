@@ -59,6 +59,10 @@ function makeInterface()
     {
         clickSound();
 
+        ge("history").value += eval(ge("theScreen").innerText);
+
+        ge('history').value += '\n';
+
         // comment out this below statement if you don't want it to reset calculationArray to empty
         calculationArray = [];
 
@@ -397,6 +401,18 @@ function makeInterface()
         ge("theScreen").textContent = calculationArray.join("");
     }
     symbolsDiv.append(buttonDecimalPoint);
+
+    //-//
+
+    let history = ce('textarea');
+    history.id = 'history';
+    history.placeholder = '0';
+    history.style.position = 'absolute';
+    history.style.right = '0px';
+    history.style.top = '40px';
+    history.style.height = '300px';
+    ba(history);
+
 }
 
 //----//

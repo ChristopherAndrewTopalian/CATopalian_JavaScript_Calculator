@@ -12,7 +12,7 @@ function playTone(frequency, duration, waveType, volume, detune, attackTime, rel
 
     let gainNode = audioCtx.createGain();
     let pannerNode = audioCtx.createStereoPanner();
-    
+
     oscillator.connect(gainNode);
     gainNode.connect(pannerNode);
     pannerNode.connect(audioCtx.destination);
