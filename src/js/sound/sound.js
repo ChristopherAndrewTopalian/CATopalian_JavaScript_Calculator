@@ -65,13 +65,13 @@ function clickSound()
 function clickSound2()
 {
     playTone(
-        245,     // frequency
-        500,     // duration
-        'square',  // waveType
-        0.01,      // volume
+        300,     // frequency
+        100,     // duration
+        'sine',  // waveType
+        0.02,      // volume
         0,       // detune
         0.1,      // attackTime
-        0.2,      // releaseTime
+        0.1,      // releaseTime
         0.0      // panValue -0.5 is left
     );
 }
@@ -79,14 +79,14 @@ function clickSound2()
 function clickSound3()
 {
     playTone(
-        300,     // frequency
-        500,     // duration
-        'triangle',  // waveType
-        0.2,      // volume
-        500,       // detune
-        0.2,      // attackTime
-        0.3,      // releaseTime
-        -0.5      // panValue -0.5 is left
+        275,     // frequency
+        100,     // duration
+        'sine',  // waveType
+        0.02,      // volume
+        0,       // detune
+        0.1,      // attackTime
+        0.1,      // releaseTime
+        0.0      // panValue -0.5 is left
     );
 }
 

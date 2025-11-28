@@ -84,6 +84,8 @@ function makeInterface()
     button1.className = "buttonNumbers";
     button1.onclick = function()
     {
+        clickSound2();
+
         // add the number to the end of calculationArray
         calculationArray.push(1);
 
@@ -99,7 +101,10 @@ function makeInterface()
     button2.className = "buttonNumbers";
     button2.onclick = function()
     {
+        clickSound2();
+
         calculationArray.push(2);
+
         ge("theScreen").textContent = calculationArray.join("");
     }
     numbersDiv.append(button2);
@@ -111,7 +116,10 @@ function makeInterface()
     button3.className = "buttonNumbers";
     button3.onclick = function()
     {
+        clickSound2();
+
         calculationArray.push(3);
+
         ge("theScreen").textContent = calculationArray.join("");
     }
     numbersDiv.append(button3);
@@ -123,7 +131,10 @@ function makeInterface()
     button4.className = "buttonNumbers";
     button4.onclick = function()
     {
+        clickSound2();
+
         calculationArray.push(4);
+
         ge("theScreen").textContent = calculationArray.join("");
     }
     numbersDiv.append(button4);
@@ -135,7 +146,10 @@ function makeInterface()
     button5.className = "buttonNumbers";
     button5.onclick = function()
     {
+        clickSound2();
+
         calculationArray.push(5);
+
         ge("theScreen").textContent = calculationArray.join("");
     }
     numbersDiv.append(button5);
@@ -147,7 +161,10 @@ function makeInterface()
     button6.className = "buttonNumbers";
     button6.onclick = function()
     {
+        clickSound2();
+
         calculationArray.push(6);
+
         ge("theScreen").textContent = calculationArray.join("");
     }
     numbersDiv.append(button6);
@@ -159,7 +176,10 @@ function makeInterface()
     button7.className = "buttonNumbers";
     button7.onclick = function()
     {
+        clickSound2();
+
         calculationArray.push(7);
+
         ge("theScreen").textContent = calculationArray.join("");
     }
     numbersDiv.append(button7);
@@ -171,7 +191,10 @@ function makeInterface()
     button8.className = "buttonNumbers";
     button8.onclick = function()
     {
+        clickSound2();
+
         calculationArray.push(8);
+
         ge("theScreen").textContent = calculationArray.join("");
     }
     numbersDiv.append(button8);
@@ -183,7 +206,10 @@ function makeInterface()
     button9.className = "buttonNumbers";
     button9.onclick = function()
     {
+        clickSound2();
+
         calculationArray.push(9);
+
         ge("theScreen").textContent = calculationArray.join("");
     }
     numbersDiv.append(button9);
@@ -195,7 +221,10 @@ function makeInterface()
     button0.className = "buttonNumbers";
     button0.onclick = function()
     {
+        clickSound2();
+
         calculationArray.push(0);
+
         ge("theScreen").textContent = calculationArray.join("");
     }
     numbersDiv.append(button0);
@@ -218,7 +247,10 @@ function makeInterface()
     buttonAddition.className = "buttonSymbols";
     buttonAddition.onclick = function()
     {
+        clickSound3();
+
         calculationArray.push("+");
+
         ge("theScreen").textContent = calculationArray.join("");
     }
     symbolsDiv.append(buttonAddition);
@@ -230,7 +262,10 @@ function makeInterface()
     buttonSubtraction.className = "buttonSymbols";
     buttonSubtraction.onclick = function()
     {
+        clickSound3();
+
         calculationArray.push("-");
+
         ge("theScreen").textContent = calculationArray.join("");
     }
     symbolsDiv.append(buttonSubtraction);
@@ -242,7 +277,10 @@ function makeInterface()
     buttonMultiplication.className = "buttonSymbols";
     buttonMultiplication.onclick = function()
     {
+        clickSound3();
+
         calculationArray.push("*");
+
         ge("theScreen").textContent = calculationArray.join("");
     }
     symbolsDiv.append(buttonMultiplication);
@@ -254,7 +292,10 @@ function makeInterface()
     buttonDivision.className = "buttonSymbols";
     buttonDivision.onclick = function()
     {
+        clickSound3();
+
         calculationArray.push("/");
+
         ge("theScreen").textContent = calculationArray.join("");
     }
     symbolsDiv.append(buttonDivision);
@@ -266,7 +307,10 @@ function makeInterface()
     buttonModulo.className = "buttonSymbols";
     buttonModulo.onclick = function()
     {
+        clickSound3();
+
         calculationArray.push("%");
+
         ge("theScreen").textContent = calculationArray.join("");
     }
     symbolsDiv.append(buttonModulo);
@@ -278,7 +322,10 @@ function makeInterface()
     buttonPi.className = "buttonSymbols";
     buttonPi.onclick = function()
     {
+        clickSound3();
+
         calculationArray.push(Math.PI);
+
         ge("theScreen").textContent = calculationArray.join("");
     }
     symbolsDiv.append(buttonPi);
@@ -290,7 +337,10 @@ function makeInterface()
     buttonParenthesisOpen.className = "buttonSymbols";
     buttonParenthesisOpen.onclick = function()
     {
+        clickSound3();
+
         calculationArray.push("(");
+
         ge("theScreen").textContent = calculationArray.join("");
     }
     symbolsDiv.append(buttonParenthesisOpen);
@@ -302,7 +352,10 @@ function makeInterface()
     buttonParenthesisClosed.className = "buttonSymbols";
     buttonParenthesisClosed.onclick = function()
     {
+        clickSound3();
+
         calculationArray.push(")");
+
         ge("theScreen").textContent = calculationArray.join("");
     }
     symbolsDiv.append(buttonParenthesisClosed);
@@ -314,6 +367,8 @@ function makeInterface()
     buttonDelete.className = "buttonSymbols";
     buttonDelete.onclick = function()
     {
+        clickSound3();
+
         if (calculationArray.length > 1)
         {
             calculationArray.pop();
@@ -335,7 +390,10 @@ function makeInterface()
     buttonDecimalPoint.className = "buttonSymbols";
     buttonDecimalPoint.onclick = function()
     {
+        clickSound3();
+
         calculationArray.push(".");
+
         ge("theScreen").textContent = calculationArray.join("");
     }
     symbolsDiv.append(buttonDecimalPoint);
