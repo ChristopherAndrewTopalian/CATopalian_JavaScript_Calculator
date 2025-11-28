@@ -59,6 +59,8 @@ function makeInterface()
     {
         clickSound();
 
+        ge('history').value += ge("theScreen").innerText + '\n';
+
         ge("history").value += eval(ge("theScreen").innerText);
 
         ge('history').value += '\n';
