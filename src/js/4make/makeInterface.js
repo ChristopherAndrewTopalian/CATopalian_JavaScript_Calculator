@@ -65,6 +65,10 @@ function makeInterface()
 
         ge('history').value += '\n';
 
+        ge('history').value += '----';
+
+        ge('history').value += '\n';
+
         // comment out this below statement if you don't want it to reset calculationArray to empty
         calculationArray = [];
 
