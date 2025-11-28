@@ -34,7 +34,7 @@ function makeInterface()
 
     let buttonClear = ce("button");
     buttonClear.style.position = "absolute";
-    buttonClear.style.top = 55 + "px";
+    buttonClear.style.top = 40 + "px";
     buttonClear.style.left = -60 +"px";
     buttonClear.textContent = "C";
     buttonClear.className = "buttonSymbols";
@@ -52,7 +52,7 @@ function makeInterface()
     let buttonEqual = ce("button");
     buttonEqual.style.position = "absolute";
     buttonEqual.style.left = -60 +"px";
-    buttonEqual.style.top = 120 +"px";
+    buttonEqual.style.top = 90 +"px";
     buttonEqual.textContent = "=";
     buttonEqual.className = "buttonSymbols";
     buttonEqual.onclick = function()
@@ -244,7 +244,7 @@ function makeInterface()
     let symbolsDiv = ce("div");
     symbolsDiv.style.position = "absolute";
     symbolsDiv.style.left = 165 + "px";
-    symbolsDiv.style.top = 112 + "px";
+    symbolsDiv.style.top = 85 + "px";
     symbolsDiv.style.display = "grid";
     symbolsDiv.style.gridTemplateRows = "50px 50px 50px";
     symbolsDiv.style.gridTemplateColumns = "50px 50px 50px";
