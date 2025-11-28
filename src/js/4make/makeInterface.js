@@ -19,6 +19,8 @@ function makeInterface()
     mainDiv.style.borderWidth = 2 + "px";
     mainDiv.style.borderRadius = 4 + "px";
     mainDiv.style.padding = 8 + "px";
+    mainDiv.style.width = '400px';
+    mainDiv.style.overflowX = 'scroll';
     ba(mainDiv);
 
     //-//
@@ -35,7 +37,7 @@ function makeInterface()
     let buttonClear = ce("button");
     buttonClear.style.position = "absolute";
     buttonClear.style.top = 40 + "px";
-    buttonClear.style.left = -60 +"px";
+    buttonClear.style.left = 30 +"px";
     buttonClear.textContent = "C";
     buttonClear.className = "buttonSymbols";
     buttonClear.onclick = function()
@@ -45,13 +47,13 @@ function makeInterface()
         calculationArray = [];
         ge("theScreen").textContent = "0";
     };
-    mainDiv.append(buttonClear);
+    ba(buttonClear);
 
     //-//
 
     let buttonEqual = ce("button");
     buttonEqual.style.position = "absolute";
-    buttonEqual.style.left = -60 +"px";
+    buttonEqual.style.left = 30 +"px";
     buttonEqual.style.top = 90 +"px";
     buttonEqual.textContent = "=";
     buttonEqual.className = "buttonSymbols";
@@ -74,7 +76,7 @@ function makeInterface()
 
         ge("theScreen").innerText = eval(ge("theScreen").innerText);
     };
-    mainDiv.append(buttonEqual);
+    ba(buttonEqual);
 
     //-//
 
