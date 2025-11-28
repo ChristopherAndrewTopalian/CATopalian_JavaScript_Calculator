@@ -14,7 +14,7 @@ function makeInterface()
     mainDiv.style.position = "absolute";
     mainDiv.style.left = 100 + "px";
     mainDiv.style.top = 30 + "px";
-    mainDiv.style.height = 374 + "px";
+    mainDiv.style.height = 340 + "px";
     mainDiv.style.borderStyle = "solid";
     mainDiv.style.borderWidth = 2 + "px";
     mainDiv.style.borderRadius = 4 + "px";
@@ -23,25 +23,11 @@ function makeInterface()
 
     //-//
 
-    let theTitle = ce("div");
-    theTitle.style.position = "inherited";
-    theTitle.innerHTML = "CATopalian Calculator"
-    theTitle.style.fontSize = 25 + "px";
-    theTitle.style.fontWeight = "bold";
-    theTitle.style.display = "flex";
-    theTitle.style.flexDirection = "column";
-    theTitle.style.alignItems = "center";
-    theTitle.style.margin = "auto";
-    theTitle.style.paddingBottom = 7 + "px";
-    mainDiv.append(theTitle);
-
-    //-//
-
     let theScreen = ce("div");
     theScreen.id = "theScreen";
     theScreen.className = "theScreenStyle";
     theScreen.contentEditable = false;
-    theScreen.innerHTML = 0;
+    theScreen.textContent = 0;
     mainDiv.append(theScreen);
 
     //-//
@@ -50,12 +36,12 @@ function makeInterface()
     buttonClear.style.position = "absolute";
     buttonClear.style.top = 55 + "px";
     buttonClear.style.left = -60 +"px";
-    buttonClear.innerHTML = "C";
+    buttonClear.textContent = "C";
     buttonClear.className = "buttonSymbols";
     buttonClear.onclick = function()
     {
         calculationArray = [];
-        ge("theScreen").innerHTML = "0";
+        ge("theScreen").textContent = "0";
     };
     mainDiv.append(buttonClear);
 
@@ -65,7 +51,7 @@ function makeInterface()
     buttonEqual.style.position = "absolute";
     buttonEqual.style.left = -60 +"px";
     buttonEqual.style.top = 120 +"px";
-    buttonEqual.innerHTML = "=";
+    buttonEqual.textContent = "=";
     buttonEqual.className = "buttonSymbols";
     buttonEqual.onclick = function()
     {
@@ -90,7 +76,7 @@ function makeInterface()
     //-//
 
     let button1 = ce("button");
-    button1.innerHTML = 1;
+    button1.textContent = 1;
     button1.className = "buttonNumbers";
     button1.onclick = function()
     {
@@ -98,115 +84,115 @@ function makeInterface()
         calculationArray.push(1);
 
         // we use join to get rid of the comma
-        ge("theScreen").innerHTML = calculationArray.join("");
+        ge("theScreen").textContent = calculationArray.join("");
     }
     numbersDiv.append(button1);
 
     //-//
 
     let button2 = ce("button");
-    button2.innerHTML = 2;
+    button2.textContent = 2;
     button2.className = "buttonNumbers";
     button2.onclick = function()
     {
         calculationArray.push(2);
-        ge("theScreen").innerHTML = calculationArray.join("");
+        ge("theScreen").textContent = calculationArray.join("");
     }
     numbersDiv.append(button2);
 
     //-//
 
     let button3 = ce("button");
-    button3.innerHTML = 3;
+    button3.textContent = 3;
     button3.className = "buttonNumbers";
     button3.onclick = function()
     {
         calculationArray.push(3);
-        ge("theScreen").innerHTML = calculationArray.join("");
+        ge("theScreen").textContent = calculationArray.join("");
     }
     numbersDiv.append(button3);
 
     //-//
 
     let button4 = ce("button");
-    button4.innerHTML = 4;
+    button4.textContent = 4;
     button4.className = "buttonNumbers";
     button4.onclick = function()
     {
         calculationArray.push(4);
-        ge("theScreen").innerHTML = calculationArray.join("");
+        ge("theScreen").textContent = calculationArray.join("");
     }
     numbersDiv.append(button4);
 
     //-//
 
     let button5 = ce("button");
-    button5.innerHTML = 5;
+    button5.textContent = 5;
     button5.className = "buttonNumbers";
     button5.onclick = function()
     {
         calculationArray.push(5);
-        ge("theScreen").innerHTML = calculationArray.join("");
+        ge("theScreen").textContent = calculationArray.join("");
     }
     numbersDiv.append(button5);
 
     //-//
 
     let button6 = ce("button");
-    button6.innerHTML = 6;
+    button6.textContent = 6;
     button6.className = "buttonNumbers";
     button6.onclick = function()
     {
         calculationArray.push(6);
-        ge("theScreen").innerHTML = calculationArray.join("");
+        ge("theScreen").textContent = calculationArray.join("");
     }
     numbersDiv.append(button6);
 
     //-//
 
     let button7 = ce("button");
-    button7.innerHTML = 7;
+    button7.textContent = 7;
     button7.className = "buttonNumbers";
     button7.onclick = function()
     {
         calculationArray.push(7);
-        ge("theScreen").innerHTML = calculationArray.join("");
+        ge("theScreen").textContent = calculationArray.join("");
     }
     numbersDiv.append(button7);
 
     //-//
 
     let button8 = ce("button");
-    button8.innerHTML = 8;
+    button8.textContent = 8;
     button8.className = "buttonNumbers";
     button8.onclick = function()
     {
         calculationArray.push(8);
-        ge("theScreen").innerHTML = calculationArray.join("");
+        ge("theScreen").textContent = calculationArray.join("");
     }
     numbersDiv.append(button8);
 
     //-//
 
     let button9 = ce("button");
-    button9.innerHTML = 9;
+    button9.textContent = 9;
     button9.className = "buttonNumbers";
     button9.onclick = function()
     {
         calculationArray.push(9);
-        ge("theScreen").innerHTML = calculationArray.join("");
+        ge("theScreen").textContent = calculationArray.join("");
     }
     numbersDiv.append(button9);
 
     //-//
 
     let button0 = ce("button");
-    button0.innerHTML = 0;
+    button0.textContent = 0;
     button0.className = "buttonNumbers";
     button0.onclick = function()
     {
         calculationArray.push(0);
-        ge("theScreen").innerHTML = calculationArray.join("");
+        ge("theScreen").textContent = calculationArray.join("");
     }
     numbersDiv.append(button0);
 
@@ -224,116 +210,116 @@ function makeInterface()
     //-//
 
     let buttonAddition = ce("button");
-    buttonAddition.innerHTML = "+";
+    buttonAddition.textContent = "+";
     buttonAddition.className = "buttonSymbols";
     buttonAddition.onclick = function()
     {
         calculationArray.push("+");
-        ge("theScreen").innerHTML = calculationArray.join("");
+        ge("theScreen").textContent = calculationArray.join("");
     }
     symbolsDiv.append(buttonAddition);
 
     //-//
 
     let buttonSubtraction = ce("button");
-    buttonSubtraction.innerHTML = "-";
+    buttonSubtraction.textContent = "-";
     buttonSubtraction.className = "buttonSymbols";
     buttonSubtraction.onclick = function()
     {
         calculationArray.push("-");
-        ge("theScreen").innerHTML = calculationArray.join("");
+        ge("theScreen").textContent = calculationArray.join("");
     }
     symbolsDiv.append(buttonSubtraction);
 
     //-//
 
     let buttonMultiplication = ce("button");
-    buttonMultiplication.innerHTML = "*";
+    buttonMultiplication.textContent = "*";
     buttonMultiplication.className = "buttonSymbols";
     buttonMultiplication.onclick = function()
     {
         calculationArray.push("*");
-        ge("theScreen").innerHTML = calculationArray.join("");
+        ge("theScreen").textContent = calculationArray.join("");
     }
     symbolsDiv.append(buttonMultiplication);
 
     //-//
 
     let buttonDivision = ce("button");
-    buttonDivision.innerHTML = "/";
+    buttonDivision.textContent = "/";
     buttonDivision.className = "buttonSymbols";
     buttonDivision.onclick = function()
     {
         calculationArray.push("/");
-        ge("theScreen").innerHTML = calculationArray.join("");
+        ge("theScreen").textContent = calculationArray.join("");
     }
     symbolsDiv.append(buttonDivision);
 
     //-//
 
     let buttonModulo = ce("button");
-    buttonModulo.innerHTML = "%";
+    buttonModulo.textContent = "%";
     buttonModulo.className = "buttonSymbols";
     buttonModulo.onclick = function()
     {
         calculationArray.push("%");
-        ge("theScreen").innerHTML = calculationArray.join("");
+        ge("theScreen").textContent = calculationArray.join("");
     }
     symbolsDiv.append(buttonModulo);
 
     //-//
 
     let buttonPi = ce("button");
-    buttonPi.innerHTML = "π";
+    buttonPi.textContent = "π";
     buttonPi.className = "buttonSymbols";
     buttonPi.onclick = function()
     {
         calculationArray.push(Math.PI);
-        ge("theScreen").innerHTML = calculationArray.join("");
+        ge("theScreen").textContent = calculationArray.join("");
     }
     symbolsDiv.append(buttonPi);
 
     //-//
 
     let buttonParenthesisOpen = ce("button");
-    buttonParenthesisOpen.innerHTML = "(";
+    buttonParenthesisOpen.textContent = "(";
     buttonParenthesisOpen.className = "buttonSymbols";
     buttonParenthesisOpen.onclick = function()
     {
         calculationArray.push("(");
-        ge("theScreen").innerHTML = calculationArray.join("");
+        ge("theScreen").textContent = calculationArray.join("");
     }
     symbolsDiv.append(buttonParenthesisOpen);
 
     //-//
 
     let buttonParenthesisClosed = ce("button");
-    buttonParenthesisClosed.innerHTML = ")";
+    buttonParenthesisClosed.textContent = ")";
     buttonParenthesisClosed.className = "buttonSymbols";
     buttonParenthesisClosed.onclick = function()
     {
         calculationArray.push(")");
-        ge("theScreen").innerHTML = calculationArray.join("");
+        ge("theScreen").textContent = calculationArray.join("");
     }
     symbolsDiv.append(buttonParenthesisClosed);
 
     //-//
 
     let buttonDelete = ce("button");
-    buttonDelete.innerHTML = "Del";
+    buttonDelete.textContent = "Del";
     buttonDelete.className = "buttonSymbols";
     buttonDelete.onclick = function()
     {
         if (calculationArray.length > 1)
         {
             calculationArray.pop();
-            ge("theScreen").innerHTML = calculationArray.join("");
+            ge("theScreen").textContent = calculationArray.join("");
         }
         else
         {
             calculationArray = [];
 
-            ge("theScreen").innerHTML = 0;
+            ge("theScreen").textContent = 0;
         }   
     }
     symbolsDiv.append(buttonDelete);
@@ -341,12 +327,12 @@ function makeInterface()
     //-//
 
     let buttonDecimalPoint = ce("button");
-    buttonDecimalPoint.innerHTML = ".";
+    buttonDecimalPoint.textContent = ".";
     buttonDecimalPoint.className = "buttonSymbols";
     buttonDecimalPoint.onclick = function()
     {
         calculationArray.push(".");
-        ge("theScreen").innerHTML = calculationArray.join("");
+        ge("theScreen").textContent = calculationArray.join("");
     }
     symbolsDiv.append(buttonDecimalPoint);
 }
