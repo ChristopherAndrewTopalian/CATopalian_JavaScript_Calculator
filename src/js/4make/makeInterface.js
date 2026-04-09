@@ -53,29 +53,43 @@ function makeInterface()
 
     let buttonEqual = ce("button");
     buttonEqual.style.position = "absolute";
-    buttonEqual.style.left = 30 +"px";
-    buttonEqual.style.top = 90 +"px";
+    buttonEqual.style.left = 30 + "px";
+    buttonEqual.style.top = 90 + "px";
     buttonEqual.textContent = "=";
     buttonEqual.className = "buttonSymbols";
-    buttonEqual.onclick = function()
+
+    buttonEqual.onclick = function() 
     {
         clickSound();
 
-        ge('history').value += ge("theScreen").innerText + '\n';
+        // Grab the math expression from the screen just once
+        let expression = ge("theScreen").innerText;
+        let result;
 
-        ge("history").value += eval(ge("theScreen").innerText);
+        // Use a try/catch block just in case the user types bad math (like "5++5")
+        try
+        {
+            // This is the new Function replacement for eval!
+            // It creates a temporary function that returns your math, and immediately runs it ().
+            result = new Function('return ' + expression)(); 
+        }
+        catch (error)
+        {
+            result = "Error";
+        }
 
-        ge('history').value += '\n';
+        // Update the history using our saved expression and result
+        ge('history').value += expression + '\n';
+        ge('history').value += result + '\n';
+        ge('history').value += '----\n';
 
-        ge('history').value += '----';
-
-        ge('history').value += '\n';
-
-        // comment out this below statement if you don't want it to reset calculationArray to empty
+        // Reset the calculation array
         calculationArray = [];
 
-        ge("theScreen").innerText = eval(ge("theScreen").innerText);
+        // Put the final answer on the screen
+        ge("theScreen").innerText = result;
     };
+
     ba(buttonEqual);
 
     //-//
